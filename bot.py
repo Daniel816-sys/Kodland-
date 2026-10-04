@@ -25,6 +25,7 @@ def ban_user(message):
 
 bot.infinity_polling(none_stop=True)
 
+
 @bot.message_handler(content_types=['new_chat_members'])
 def make_some(message):
     bot.send_message(message.chat.id, 'I accepted a new user!')
